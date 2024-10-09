@@ -1,0 +1,135 @@
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+
+  --radius_8: 8px;
+  --input_border: #9b9b9b;
+  --border_color: #C2C2C2;
+  --warning-color: #DDD37C;
+  --tablehead_color: #3d3d3d;
+  --error: #a11b1b;
+  /* Header */
+  --header-background: #455298;
+  --header-link: #cecdcd;
+  --header-link_hover: #8b8b8b;
+  /* Button */
+  --primary_button-bg: #2b3a90;
+  --primary_button-text: #dcdcdc;
+  --secondary_button-bg: #6b77bd;
+  --secondary_button-text: #dcdcdc;
+  /* Control */
+  --menu-active: #7a84c1;
+  --menu-color: #dcdcdc;
+  --menu-hover: #C2C2C2;
+  /* Text */
+  --dark-color: #323232;
+  /* Link */
+  --link-color: #323232;
+  --link-hover: #4253AE;
+}
+
+body, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.global__wrapper {
+  max-width: 80vw;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+h2, h1, h3 {
+  margin: 0;
+  align-self: center;
+  color: var(--dark-color);
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  /* background-color: ; */
+  border: 1px solid var(--input_border);
+  border-radius: var(--radius_8);
+}
+
+textarea {
+  resize: none;
+  box-sizing: content-box;
+  min-height: 90px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  border-radius: var(--radius_8);
+  border: 1px solid var(--input_border);
+}
+
+.input_error {
+  border: 1px solid var(--error);
+}
+
+.controlpage__background {
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  flex: 1;
+  height: min-content;
+}
+
+.w_10 {
+  width: 48px;
+}
+
+.page__body {
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+}
+
+.page__compose {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button__row {
+  display: inline-flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.button__row>* {
+  flex: 1;
+}

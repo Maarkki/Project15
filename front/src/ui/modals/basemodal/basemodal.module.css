@@ -1,0 +1,30 @@
+.modalHead {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.control_row {
+    display: flex;
+    width: 100%;
+}
+
+.control_arrow {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+.control_close {
+    justify-content: end;
+    margin-left: auto;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+.content {
+    padding: 0 20px 0 20px;
+}

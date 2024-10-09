@@ -1,0 +1,43 @@
+.table, .cell {
+    display: flex;
+}
+
+.table>div:not(:last-child), .table>div:is(:first-child) {
+    border-bottom: 1px solid var(--border_color);
+}
+
+.table {
+    flex-direction: column;
+}
+
+.row, .thead {
+    display: flex;
+    width: 100%;
+}
+
+.row {
+    padding: 16px 0;
+}
+
+.row>div:is(:last-child), .row>div:not(:first-child) {
+    justify-content: right;
+}
+
+.thead {
+    color: var(--tablehead_color);
+    font-size: 12px;
+    padding: 0 0 16px 0;
+}
+
+.cell {
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+    white-space: wrap;
+}
+
+@media screen and (max-width: 1600px) {
+    .first_queue {
+        display: none;
+    }
+}

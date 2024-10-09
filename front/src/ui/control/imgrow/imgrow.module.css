@@ -1,0 +1,10 @@
+.group {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.item {
+    width: 48px;
+    cursor: pointer;
+}

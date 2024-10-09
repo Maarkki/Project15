@@ -1,0 +1,38 @@
+.search_input {
+    flex: 1
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search_button {
+    width: 15%;
+    border-radius: var(--radius_8);
+    border: none;
+    cursor: pointer;
+}
+
+.result__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 25vh;
+    overflow-y: auto;
+}
+
+.result__card {
+    border: 1px solid #007ffd;
+    border-radius: var(--radius_8);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}

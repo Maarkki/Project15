@@ -1,0 +1,13 @@
+.form__wrapper {
+    max-width: 550px;
+    margin: 25vh auto;
+    padding: 40px;
+    background-color: #EEEEEE;
+    border-radius: var(--radius_8);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
